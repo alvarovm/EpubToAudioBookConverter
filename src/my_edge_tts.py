@@ -115,11 +115,11 @@ def generate_flag(percentage, flag_name, unit):
 def generate_pitch_flag(variation_hz=0):
     if variation_hz == 0:
         return ""
-
-    #sign = "+" if variation_hz > 0 else "-"
-    return f'--pitch={variation_hz}Hz'
-    #return f'--pitch={sign}{variation_hz}'
-
+        
+    csign = '+' if variation_hz > 0 else ''
+    
+    return f'--pitch={csign}{variation_hz}Hz'
+    
 
 
 
